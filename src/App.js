@@ -1,18 +1,21 @@
-import logo from './logo.svg';
 import './App.scss';
+import {Navbar} from './components/Navbar'
+import {ItemListContainer} from './components/ItemListContainer'
+import {Footer} from './components/Footer' 
 
 function App() {
   return (
     <div className="App">
-      <header className="header">
-        <img src="./img/logo.png" className="header__logo" alt="logo" />
-        <div className='header__nav'>
-          <h3>Home</h3>
-          <h3>Shorts</h3>
-          <h3>Gorras</h3>
-        </div>
-        <div className='header_buttons'>Comprar</div>
-      </header>
+      <main>
+      <Navbar />
+      <div className='item__container'>
+        <ItemListContainer title="SHORT DE BAÑO LISO" detail="5 COLORES" price="$5.499"/>
+        <ItemListContainer title="SHORT DE BAÑO TRICOLOR" detail="3 COMBINACIONES" price="$5.799"/>
+        <ItemListContainer title="SHORT DE BAÑO ESTAMPADO" detail="3 DISEÑOS" price="$5.999"/>
+        <ItemListContainer title="SHORT DE BAÑO PREMIUM" detail="3 COLORES" price="$6.499"/>
+      </div>
+      </main>
+      <Footer />
     </div>
   );
 }
