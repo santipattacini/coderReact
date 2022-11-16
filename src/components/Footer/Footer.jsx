@@ -1,3 +1,5 @@
+import './Footer.scss'
+
 export const Footer = () => {
     return <footer className="footer">
         <span>Denver Shorts - 2022. Todos los derechos reservados.</span>
