@@ -22,6 +22,7 @@ export const AppContainer = () => {
             {products.map((product) => {
                 return <Item
                     key={product.id}
+                    id={product.id}
                     nombre={product.nombre}
                     tag={product.tag}
                     precio={product.precio}

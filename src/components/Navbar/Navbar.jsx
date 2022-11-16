@@ -10,7 +10,10 @@ export const Navbar = () => {
         <div className="header__nav">
             {links.map((elemento) => {
                 return ( 
-                    <Link className="nav__options" to={`/categoria/${elemento.toLowerCase()}`} key ={elemento}>
+                    <Link 
+                        className="nav__options" 
+                        to={`/categoria/${elemento.toLowerCase()}`} 
+                        key ={elemento}>
                         {elemento}
                     </Link>
                 );
